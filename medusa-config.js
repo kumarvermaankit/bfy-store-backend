@@ -29,7 +29,7 @@ const ADMIN_CORS =
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
+  process.env.DATABASE_URL || "postgres://tuddeogp:rw8luzmymTrmv-8ZGfdUbgmR7BT995fj@jelani.db.elephantsql.com/tuddeogp";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
@@ -46,9 +46,21 @@ const plugins = [
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
+      // autoRebuild: true,
+      // develop: {
+      //   open: process.env.OPEN_BROWSER !== "false",
+      // },
+      serve: true,
       autoRebuild: true,
+      path: "/admin",
+      outDir: "build",
       develop: {
-        open: process.env.OPEN_BROWSER !== "false",
+        open: true,
+        port: 7001,
+        logLevel: "error",
+        stats: "normal",
+        allowedHosts: "auto",
+        webSocketURL: undefined,
       },
     },
   },
