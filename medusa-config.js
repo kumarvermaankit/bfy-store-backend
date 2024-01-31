@@ -52,7 +52,7 @@ const plugins = [
       // },
       serve: true,
       autoRebuild: true,
-      path: "/admin",
+      path: "/app",
       outDir: "build",
       develop: {
         open: true,
