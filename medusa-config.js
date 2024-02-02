@@ -39,6 +39,7 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
+      backend_url: "https://bfy-store-backend-production.up.railway.app"
     },
   },
   `medusa-payment-manual`,
@@ -56,10 +57,9 @@ const plugins = [
       outDir: "build",
       develop: {
         open: true,
-        port: 7001,
         logLevel: "error",
         stats: "normal",
-        allowedHosts: "auto",
+        allowedHosts: "all",
         webSocketURL: undefined,
       },
     },
