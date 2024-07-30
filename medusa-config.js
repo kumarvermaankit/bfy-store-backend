@@ -28,7 +28,7 @@ const ADMIN_CORS =
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
-const DATABASE_URL = "postgres://postgres:akv@16.16.65.245:5432/vendure?schema=public"
+const DATABASE_URL = "postgres://postgres:akv@16.16.65.245:5432/postgres?schema=public"
   // process.env.DATABASE_URL || "postgres://postgres.jctnbufsulojxpqzcmrc:Mattmurdock@123@aws-0-us-east-1.pooler.supabase.com:6543/postgres";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
