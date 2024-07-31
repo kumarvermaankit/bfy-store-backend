@@ -39,7 +39,7 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
-      backend_url: "https://psychiatric-charity-akv-7597c875.koyeb.app"
+      backend_url: "https://sexual-haleigh-akv-35db5edd.koyeb.app/"
     },
   },
   `medusa-payment-manual`,
